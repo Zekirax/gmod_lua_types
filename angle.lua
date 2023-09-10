@@ -1,0 +1,8 @@
+---@class Gmod_angle
+---@field x number
+---@field y number
+---@field z number
+---@operator add(Gmod_angle) : Gmod_angle
+---@operator sub(Gmod_angle) : Gmod_angle
+---@operator mul(number) : Gmod_angle
+---@operator div(number) : Gmod_angle

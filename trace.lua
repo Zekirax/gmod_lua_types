@@ -1,0 +1,23 @@
+---@class Gmod_trace_result
+---@field Entity Gmod_entity
+---@field Fraction number
+---@field FractionLeftSolid number
+---@field Hit boolean
+---@field HitBox number
+---@field HitGroup number
+---@field HitNoDraw boolean
+---@field HitNonWorld boolean
+---@field HitNormal Gmod_vector3
+---@field HitPos Gmod_vector3
+---@field HitSky boolean
+---@field HitTexture string
+---@field HitWorld boolean
+---@field MatType number
+---@field Normal Gmod_vector3
+---@field StartPos Gmod_vector3
+---@field SurfaceProps number
+---@field StartSolid boolean
+---@field AllSolid boolean
+---@field SurfaceFlags number
+---@field DispFlags number
+---@field Contents number

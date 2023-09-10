@@ -1,0 +1,6 @@
+---@class SQL_query
+---@field start fun(self)
+---@field getData fun(self) : table
+---@field wait fun(self, boolean)
+---@field onError fun(self, error : string)
+---@field onSuccess fun(self, data : table)

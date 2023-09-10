@@ -1,0 +1,2 @@
+---@class Gmod_vgui_panel
+---@field Remove fun(self)
