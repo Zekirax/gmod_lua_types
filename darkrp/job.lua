@@ -1,8 +1,7 @@
 ---@class Job_bodygroup
 ---@field [string] integer[]
 
----@class DarkRP_job
----@field name string
+---@class DarkRP_job_create
 ---@field color Gmod_color
 ---@field model string[]
 ---@field weapons string[]
@@ -12,14 +11,17 @@
 ---@field salary integer
 ---@field admin integer
 ---@field vote boolean
----@field hasLicense boolean
+---@field hasLicense boolean | nil
 ---@field category string
 ---@field sub_category nil | string
 ---@field candemote boolean
----@field medic boolean
+---@field medic boolean | nil
 ---@field model_zombie nil | string
 ---@field level integer
----@field bodygroups Job_bodygroup[]
+---@field bodygroups Job_bodygroup[] | nil
 ---@field PlayerSpawn nil | function
 ---@field PlayerLoadout nil | function
 ---@field PlayerCanPickupWeapon nil | function
+
+---@class DarkRP_job : DarkRP_job_create
+---@field name string
