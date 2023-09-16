@@ -8,6 +8,7 @@
 ---@field GetNoDraw fun(self) : boolean
 ---@field GetOwner fun(self) : Gmod_entity
 ---@field Remove fun(self)
+---@field GetClass fun(self) : string
 
 ---@alias Gmod_entity_class string
 ---@alias Gmod_entity_model string

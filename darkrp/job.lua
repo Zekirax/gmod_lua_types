@@ -9,6 +9,10 @@
 ---@field command string
 ---@field max integer
 ---@field salary integer
+---@field health integer | nil
+---@field armor integer | nil
+---@field donator integer | nil donator statut
+---@field immunity integer | nil sam immunity
 ---@field admin integer
 ---@field vote boolean
 ---@field hasLicense boolean | nil
@@ -17,11 +21,29 @@
 ---@field candemote boolean
 ---@field medic boolean | nil
 ---@field model_zombie nil | string
----@field level integer
+---@field level integer | nil
+---@field jumppower integer | nil
+---@field runspeed integer | nil
+---@field walkspeed integer | nil
 ---@field bodygroups Job_bodygroup[] | nil
 ---@field PlayerSpawn nil | function
----@field PlayerLoadout nil | function
----@field PlayerCanPickupWeapon nil | function
+---@field PlayerLoadout nil | fun(ply : Gmod_player) : boolean
+---@field PlayerCanPickupWeapon nil | fun(ply : Gmod_player, weapon : Gmod_weapon) : boolean
+---@field keycard_level integer | nil
 
 ---@class DarkRP_job : DarkRP_job_create
 ---@field name string
+---@field team integer
+---@field health integer
+---@field armor integer
+---@field level integer
+---@field immunity integer sam immunity
+---@field donator integer donator statut
+---@field jumppower integer
+---@field runspeed integer
+---@field walkspeed integer
+---@field customCheck fun(ply : Gmod_player) : boolean
+---@field CustomCheckFailMsg fun(ply : Gmod_player) : string
+
+---@type DarkRP_job[] all created jobs
+RPExtraTeams = {}
