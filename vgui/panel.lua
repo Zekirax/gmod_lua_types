@@ -1,2 +1,12 @@
 ---@class Gmod_vgui_panel
 ---@field Remove fun(self)
+---@field SetY fun(self, y : integer)
+---@field GetY fun(self) : integer
+---@field GetWide fun(self) : integer
+---@field SetTall fun(self, tall : integer)
+---@field SetSize fun(self, w : integer, h : integer)
+---@field SetTextColor fun(self, color : Gmod_color)
+---@field SetPos fun(self, x : integer, y : integer)
+---@field SetFont fun(self, font : string)
+---@field SetText fun(self, text : string)
+---@field Paint fun(self, w : integer, h : integer)

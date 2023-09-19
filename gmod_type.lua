@@ -1,5 +1,0 @@
----@class Gmod_color
----@field r integer
----@field g integer
----@field b integer
----@field a integer
