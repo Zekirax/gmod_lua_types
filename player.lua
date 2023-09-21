@@ -10,6 +10,7 @@
 ---@field GetEyeTrace fun(self) : Gmod_trace_result
 ---@field GetName fun(self) : string
 ---@field PickupWeapon fun(self, wep : Gmod_weapon) : boolean
+---@field IsConnected fun(self) : boolean
 
 ---@class Gmod_player
 local Gmod_player = {}
