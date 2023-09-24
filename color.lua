@@ -8,7 +8,7 @@
 ---@param r integer
 ---@param g integer
 ---@param b integer
----@param a integer
+---@param a integer | nil default 255
 ---@return Gmod_color
 function Color(r, g, b, a)
     return { r = r, g = g, b = b, a = a }

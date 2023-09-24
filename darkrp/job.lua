@@ -30,6 +30,7 @@
 ---@field PlayerLoadout nil | fun(ply : Gmod_player) : boolean
 ---@field PlayerCanPickupWeapon nil | fun(ply : Gmod_player, weapon : Gmod_weapon) : boolean
 ---@field keycard_level integer | nil
+---@field attachments string[] | nil used for attachments in arccw weapons
 
 ---@class DarkRP_job : DarkRP_job_create
 ---@field name string
