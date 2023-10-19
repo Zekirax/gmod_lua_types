@@ -1,12 +1,28 @@
 ---@class Gmod_vgui_panel
 ---@field Remove fun(self)
+---@field Think fun(self)
+---@field InvalidateLayout fun(self)
+---@field Init fun(self)
+---@field SetParent fun(self, parent : Gmod_vgui_panel)
+---@field SetAlpha fun(self, alpha : integer)
+---@field Center fun(self)
+---@field PerformLayout fun(self,  w : integer, h : integer) | nil
+---@field SetX fun(self, x : integer)
 ---@field SetY fun(self, y : integer)
 ---@field GetY fun(self) : integer
+---@field GetX fun(self) : integer
 ---@field GetWide fun(self) : integer
+---@field GetSize fun(self) : integer, integer
+---@field GetTall fun(self) : integer
 ---@field SetTall fun(self, tall : integer)
+---@field SetWide fun(self, wide : integer)
+---@field OnMouseReleased fun(self, key_code : integer)
+---@field OnMousePressed fun(self, key_code : integer)
+---@field OnMouseWheeled fun(self, scroll_delta : integer)
 ---@field SetSize fun(self, w : integer, h : integer)
 ---@field SetTextColor fun(self, color : Gmod_color)
 ---@field SetPos fun(self, x : integer, y : integer)
 ---@field SetFont fun(self, font : string)
 ---@field SetText fun(self, text : string)
+---@field GetParent fun(self) : Gmod_vgui_panel
 ---@field Paint fun(self, w : integer, h : integer)
