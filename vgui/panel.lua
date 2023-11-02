@@ -5,6 +5,7 @@
 ---@field Init fun(self)
 ---@field SetParent fun(self, parent : Gmod_vgui_panel)
 ---@field SetAlpha fun(self, alpha : integer)
+---@field GetAlpha fun(self) : integer
 ---@field Center fun(self)
 ---@field PerformLayout fun(self,  w : integer, h : integer) | nil
 ---@field SetX fun(self, x : integer)
@@ -14,8 +15,11 @@
 ---@field GetWide fun(self) : integer
 ---@field GetSize fun(self) : integer, integer
 ---@field GetTall fun(self) : integer
+---@field GetChildren fun(self) : Gmod_vgui_panel[]
+---@field GetTextSize fun(self) : integer, integer
 ---@field SetTall fun(self, tall : integer)
 ---@field SetWide fun(self, wide : integer)
+---@field SetContentAlignment fun(self, align : integer)
 ---@field OnMouseReleased fun(self, key_code : integer)
 ---@field OnMousePressed fun(self, key_code : integer)
 ---@field OnMouseWheeled fun(self, scroll_delta : integer)
@@ -24,5 +28,14 @@
 ---@field SetPos fun(self, x : integer, y : integer)
 ---@field SetFont fun(self, font : string)
 ---@field SetText fun(self, text : string)
+---@field SetMouseInputEnabled fun(self, mouseInput : boolean)
 ---@field GetParent fun(self) : Gmod_vgui_panel
 ---@field Paint fun(self, w : integer, h : integer)
+---@field MakePopup fun(self)
+---@field IsHovered fun(self) : boolean
+---@field SetMaterial fun(self, mat : Gmod_material)
+---@field SetCursor fun(self, cursor : string) : boolean
+---@field SizeToChildren fun(self, size_width : boolean, size_height : boolean)
+---@field CenterVertical fun(self, fraction : number | nil)
+---@field CenterHorizontal fun(self, fraction : number | nil)
+---@field AlphaTo fun(self, alpha : number, duration : number, delay : number | nil, callback : function  | nil)
