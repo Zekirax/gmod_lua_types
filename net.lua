@@ -6,6 +6,13 @@
 ---@field ReadInt fun(bits: integer) : integer
 ---@field ReadEntity fun() : Gmod_entity
 ---@field WriteEntity fun(entitiy : Gmod_entity)
+---@field WriteUInt fun(value : integer, bits : integer)
+---@field WriteInt fun(value : integer, bits : integer)
+---@field WriteTable fun(table : table)
+---@field WriteString fun(str : string)
+---@field ReadString fun() : string
+---@field ReadTable fun() : table
+---@field SendToServer fun()
 
 ---@type Gmod_net
 net = {}

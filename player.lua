@@ -12,6 +12,7 @@
 ---@field PickupWeapon fun(self, wep : Gmod_weapon) : boolean
 ---@field IsConnected fun(self) : boolean
 ---@field Alive fun(self) : boolean
+---@field SteamID fun(self) : string
 
 ---@class Gmod_player
 local Gmod_player = {}

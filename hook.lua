@@ -1,7 +1,7 @@
 ---@class Gmod_hook
 hook = {}
 
----@alias Gmod_hook_event_name "PlayerDeath" | "Initialize" | 
+---@alias Gmod_hook_event_name "PlayerDeath" | "Initialize" | "PlayerInitialSpawn" 
 
 ---add a hook
 ---@param eventName Gmod_hook_event_name

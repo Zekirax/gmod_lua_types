@@ -16,6 +16,7 @@
 ---@field GetSize fun(self) : integer, integer
 ---@field GetTall fun(self) : integer
 ---@field GetChildren fun(self) : Gmod_vgui_panel[]
+---@field Add fun(self, vgui : string) : Gmod_vgui_panel
 ---@field GetTextSize fun(self) : integer, integer
 ---@field SetTall fun(self, tall : integer)
 ---@field SetWide fun(self, wide : integer)
@@ -27,6 +28,7 @@
 ---@field SetTextColor fun(self, color : Gmod_color)
 ---@field SetPos fun(self, x : integer, y : integer)
 ---@field SetFont fun(self, font : string)
+---@field GetText fun(self) : string
 ---@field SetText fun(self, text : string)
 ---@field SetMouseInputEnabled fun(self, mouseInput : boolean)
 ---@field GetParent fun(self) : Gmod_vgui_panel
@@ -39,3 +41,4 @@
 ---@field CenterVertical fun(self, fraction : number | nil)
 ---@field CenterHorizontal fun(self, fraction : number | nil)
 ---@field AlphaTo fun(self, alpha : number, duration : number, delay : number | nil, callback : function  | nil)
+---@field Dock fun(self, dock_type : integer)
