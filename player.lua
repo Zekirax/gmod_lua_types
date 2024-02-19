@@ -1,3 +1,9 @@
+---@class Gmod_player_table
+---@field GetAll fun() : Gmod_player[]
+
+---@class Gmod_player_table
+player = {}
+
 ---@class Gmod_player : Gmod_entity
 ---@field getJobTable fun(self) : DarkRP_job
 ---@field UserID fun(self) : integer
@@ -13,6 +19,8 @@
 ---@field IsConnected fun(self) : boolean
 ---@field Alive fun(self) : boolean
 ---@field SteamID fun(self) : string
+---@field GetNWInt fun(self, key : string) : number
+---@field SetNWInt fun(self, key : string, value : number)
 
 ---@class Gmod_player
 local Gmod_player = {}
